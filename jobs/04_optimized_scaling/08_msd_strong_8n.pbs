@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -N msd_strong_8n
+#PBS -P personal-<id>
+#PBS -q normal
+#PBS -l place=scatter
+#PBS -l select=8:ncpus=64:mpiprocs=32:ompthreads=2:mem=64gb
+#PBS -l walltime=00:30:00
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+module load nvhpc/23.7 openmpi/4.1.2-hpe
+
+export OMP_NUM_THREADS=2
+# 8 nodes * 32 mpiprocs = 256 total ranks
+RANKS=256
+
+echo "=== MSD Strong Scaling: 8 Nodes (256 Ranks x 2 Threads) ==="
+
+for run in {1..5}; do
+    echo "--- Repetition $run of 5 ---"
+    mpiexec -n $RANKS --map-by ppr:32:node:PE=2 --bind-to core ./executables/pca_optimized data/year-prediction-msd/msd_full.txt 5 1 msd_strong_8node
+    echo ""
+done

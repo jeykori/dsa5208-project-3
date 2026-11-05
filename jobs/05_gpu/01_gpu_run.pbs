@@ -1,0 +1,43 @@
+#!/bin/bash
+#PBS -N pca_gpu_run
+#PBS -P personal-<id>
+#PBS -q normal
+#PBS -l select=1:ngpus=1
+#PBS -l walltime=00:30:00
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+
+# Load compiler, MPI, and CUDA modules required by NSCC ASPIRE 2A accelerator nodes
+module load nvhpc/23.7 openmpi/4.1.2-hpe
+
+echo "=== GPU Diagnostic (nvidia-smi) ==="
+nvidia-smi
+echo ""
+
+# Set OpenMP target offload behavior and single orchestrating host thread
+export OMP_TARGET_OFFLOAD=MANDATORY
+export OMP_NUM_THREADS=1
+
+EXE="./executables/pca_gpu"
+
+echo "=== Executing OpenMP GPU Target Offload on DSADS (5,625 Features) ==="
+for run in {1..5}; do
+    echo "--- Repetition $run of 5 ---"
+    mpiexec -n 1 --map-by ppr:1:node:PE=1 --bind-to core $EXE \
+        data/dsads/dsads_full.txt 5 1 dsads_gpu_1n_1r_1t
+    echo ""
+done
+
+echo ""
+echo "=== Executing OpenMP GPU Target Offload on YearPredictionMSD (515,345 Samples) ==="
+for run in {1..5}; do
+    echo "--- Repetition $run of 5 ---"
+    mpiexec -n 1 --map-by ppr:1:node:PE=1 --bind-to core $EXE \
+        data/year-prediction-msd/msd_full.txt 5 1 msd_gpu_1n_1r_1t
+    echo ""
+done
+
+echo ""
+echo "=== GPU Offload Test Run Complete ==="
+

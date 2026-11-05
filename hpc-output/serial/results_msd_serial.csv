@@ -1,0 +1,4 @@
+RunName,Ranks,Threads,Rows,Cols,IO_s,Preprocess_s,Covariance_s,Eigen_s,Total_s
+msd_serial,1,1,515345,90,17.3491,0.594091,18.1685,0.06428,36.176
+msd_serial,1,1,515345,90,16.0211,0.701399,22.4343,0.0628703,39.2197
+msd_serial,1,1,515345,90,12.4894,0.735219,29.8591,0.0566452,43.1403

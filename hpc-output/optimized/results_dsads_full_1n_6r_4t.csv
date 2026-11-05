@@ -1,0 +1,2 @@
+RunName,Ranks,Threads,Rows,Cols,IO_s,Preprocess_s,Covariance_s,Eigen_s,Total_s
+dsads_full_1n_6r_4t,6,4,9120,5625,4.1011,0.0271893,6.51911,59.0965,69.7439

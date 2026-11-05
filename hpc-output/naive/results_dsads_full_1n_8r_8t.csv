@@ -1,0 +1,2 @@
+RunName,Ranks,Threads,Rows,Cols,IO_s,Preprocess_s,Covariance_s,Eigen_s,Total_s
+dsads_full_1n_8r_8t,8,8,9120,5625,3.8811,0.0116088,4.57944,28.0259,36.498

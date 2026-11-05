@@ -1,0 +1,38 @@
+#!/bin/bash
+#PBS -N dsads_full_1n
+#PBS -P personal-<id>
+#PBS -q normal
+#PBS -l select=1:ncpus=64:mpiprocs=64:ompthreads=1:mem=64gb
+#PBS -l walltime=00:45:00
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+module load nvhpc/23.7 openmpi/4.1.2-hpe
+
+echo "=== DSADS 64-Core Single Node Sweep ==="
+
+configs=(
+    "64 1"
+    "32 2"
+    "16 4"
+    "8 8"
+    "4 16"
+    "2 32"
+    "1 64"
+)
+
+for config in "${configs[@]}"; do
+    read -r ranks threads <<< "$config"
+
+    echo "--- Config: ${ranks} MPI Ranks x ${threads} OpenMP Threads ---"
+
+    export OMP_NUM_THREADS=$threads
+
+    mpiexec -n $ranks --map-by ppr:${ranks}:node:PE=${threads} --bind-to core ./executables/pca_optimized \
+        data/dsads/dsads_full.txt 5 1 dsads_full_1n_${ranks}r_${threads}t
+
+    echo ""
+done
+
+# Merge all generated CSVs into one master file, stripping duplicate headers
+awk 'FNR==1 && NR!=1{next;}{print}' output/optimized/results_dsads_full_1n_*.csv > output/optimized/final_1node_sweep.csv

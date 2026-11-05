@@ -1,0 +1,4 @@
+RunName,Ranks,Threads,Rows,Cols,IO_s,Preprocess_s,Covariance_s,Eigen_s,Total_s
+dsads_full_serial,1,1,9120,5625,9.39793,0.704593,906.728,141.009,1057.84
+dsads_full_serial,1,1,9120,5625,9.1372,0.640152,846.214,145.208,1001.2
+dsads_full_serial,1,1,9120,5625,9.09029,0.662056,893.919,141.137,1044.81

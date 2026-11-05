@@ -1,0 +1,33 @@
+#!/bin/bash
+#PBS -N dsads_serial_complexity
+#PBS -P personal-<id>
+#PBS -q normal
+#PBS -l select=1:ncpus=1:mem=24gb
+#PBS -l walltime=00:120:00
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+module load nvhpc/23.7 openmpi/4.1.2-hpe
+
+echo "=== DSADS Serial Complexity Sweep (1k to 8k) ==="
+
+datasets=(
+    "dsads_1000.txt"
+    "dsads_2000.txt"
+    "dsads_4000.txt"
+)
+
+for ds in "${datasets[@]}"; do
+    # Extract name without extension for the run label (e.g., dsads_1k)
+    label="${ds%.txt}"
+
+    echo "========================================="
+    echo "Running Dataset: ${ds}"
+    echo "========================================="
+
+    for run in {1..3}; do
+        echo "--- Repetition $run of 3 ---"
+        ./executables/pca_serial data/dsads/${ds} 5 1 dsads_serial_${label}
+        echo ""
+    done
+done

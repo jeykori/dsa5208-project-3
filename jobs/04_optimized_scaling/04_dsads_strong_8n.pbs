@@ -1,0 +1,23 @@
+#!/bin/bash
+#PBS -N dsads_strong_8n
+#PBS -P personal-<id>
+#PBS -q normal
+#PBS -l place=scatter
+#PBS -l select=8:ncpus=64:mpiprocs=1:ompthreads=64:mem=64gb
+#PBS -l walltime=00:30:00
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+module load nvhpc/23.7 openmpi/4.1.2-hpe
+
+export OMP_NUM_THREADS=64
+# 8 nodes * 1 mpiprocs = 8 total ranks
+RANKS=8
+
+echo "=== DSADS Strong Scaling: 8 Nodes (8 Ranks x 64 Threads) ==="
+
+for run in {1..5}; do
+    echo "--- Repetition $run of 5 ---"
+    mpiexec -n $RANKS --map-by ppr:1:node:PE=64 --bind-to core ./executables/pca_optimized data/dsads/dsads_full.txt 5 1 dsads_strong_8node
+    echo ""
+done

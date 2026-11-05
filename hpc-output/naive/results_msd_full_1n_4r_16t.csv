@@ -1,0 +1,2 @@
+RunName,Ranks,Threads,Rows,Cols,IO_s,Preprocess_s,Covariance_s,Eigen_s,Total_s
+msd_full_1n_4r_16t,4,16,515345,90,3.99288,0.0559537,0.334185,0.0389779,4.42199
