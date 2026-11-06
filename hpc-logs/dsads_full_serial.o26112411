@@ -1,0 +1,55 @@
+=== DSADS Full Serial (3 Repetitions) ===
+--- Repetition 1 of 3 ---
+Run Name: dsads_full_serial | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+Serial PC1: Eigenvalue = 671.042
+Serial PC2: Eigenvalue = 584.283
+Serial PC3: Eigenvalue = 384.055
+Serial PC4: Eigenvalue = 204.571
+Serial PC5: Eigenvalue = 163.154
+
+[serial Timings]
+I/O Time:       9.39793 s
+Pre-processing: 0.704593 s
+Covariance:     906.728 s
+Eigendecomp:    141.009 s
+Total Time:     1057.84 s
+
+
+--- Repetition 2 of 3 ---
+Run Name: dsads_full_serial | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+Serial PC1: Eigenvalue = 671.042
+Serial PC2: Eigenvalue = 584.283
+Serial PC3: Eigenvalue = 384.055
+Serial PC4: Eigenvalue = 204.571
+Serial PC5: Eigenvalue = 163.154
+
+[serial Timings]
+I/O Time:       9.1372 s
+Pre-processing: 0.640152 s
+Covariance:     846.214 s
+Eigendecomp:    145.208 s
+Total Time:     1001.2 s
+
+
+--- Repetition 3 of 3 ---
+Run Name: dsads_full_serial | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+Serial PC1: Eigenvalue = 671.042
+Serial PC2: Eigenvalue = 584.283
+Serial PC3: Eigenvalue = 384.055
+Serial PC4: Eigenvalue = 204.571
+Serial PC5: Eigenvalue = 163.154
+
+[serial Timings]
+I/O Time:       9.09029 s
+Pre-processing: 0.662056 s
+Covariance:     893.919 s
+Eigendecomp:    141.137 s
+Total Time:     1044.81 s
+
+

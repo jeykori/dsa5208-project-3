@@ -1,0 +1,18 @@
+--- Scikit-Learn Validation Targets (DSADS) ---
+Scaling applied: Z-Score Standardization (with std)
+
+Top 5 Eigenvalues (Variance):
+PC1: 671.115629
+PC2: 584.347568
+PC3: 384.097005
+PC4: 204.593272
+PC5: 163.171894
+
+Top 5 Explained Variance Ratios:
+PC1: 11.929636%
+PC2: 10.387262%
+PC3: 6.827642%
+PC4: 3.636815%
+PC5: 2.900516%
+
+Total Variance Explained by Top 5: 35.681871%

@@ -1,0 +1,590 @@
+=== DSADS 64-Core Single Node Sweep ===
+--- Config: 64 MPI Ranks x 1 OpenMP Threads ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c0s1b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793865730.828323] [x1002c0s1b1n1:2329814:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865730.836005] [x1002c0s1b1n1:2329814:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.060188] [x1002c0s1b1n1:2329804:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.068286] [x1002c0s1b1n1:2329804:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.210989] [x1002c0s1b1n1:2329801:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.218362] [x1002c0s1b1n1:2329801:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.474411] [x1002c0s1b1n1:2329811:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.482195] [x1002c0s1b1n1:2329811:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.500141] [x1002c0s1b1n1:2329805:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.530500] [x1002c0s1b1n1:2329810:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.555173] [x1002c0s1b1n1:2329805:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.555204] [x1002c0s1b1n1:2329810:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.738013] [x1002c0s1b1n1:2329816:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.745273] [x1002c0s1b1n1:2329816:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.750439] [x1002c0s1b1n1:2329806:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.757676] [x1002c0s1b1n1:2329806:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.790947] [x1002c0s1b1n1:2329790:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.796336] [x1002c0s1b1n1:2329795:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.796875] [x1002c0s1b1n1:2329772:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.800111] [x1002c0s1b1n1:2329780:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.802810] [x1002c0s1b1n1:2329775:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.811726] [x1002c0s1b1n1:2329790:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.812821] [x1002c0s1b1n1:2329807:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.828356] [x1002c0s1b1n1:2329795:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.828364] [x1002c0s1b1n1:2329772:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.831355] [x1002c0s1b1n1:2329780:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.831347] [x1002c0s1b1n1:2329775:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.836045] [x1002c0s1b1n1:2329807:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.842903] [x1002c0s1b1n1:2329785:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.845013] [x1002c0s1b1n1:2329768:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.893143] [x1002c0s1b1n1:2329785:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.893136] [x1002c0s1b1n1:2329768:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.893626] [x1002c0s1b1n1:2329762:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.898161] [x1002c0s1b1n1:2329763:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.900454] [x1002c0s1b1n1:2329797:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.904183] [x1002c0s1b1n1:2329815:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.949454] [x1002c0s1b1n1:2329797:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.951087] [x1002c0s1b1n1:2329762:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.951084] [x1002c0s1b1n1:2329763:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865731.951975] [x1002c0s1b1n1:2329815:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.068690] [x1002c0s1b1n1:2329787:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.094858] [x1002c0s1b1n1:2329787:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.158684] [x1002c0s1b1n1:2329765:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.164229] [x1002c0s1b1n1:2329765:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.166822] [x1002c0s1b1n1:2329757:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.172604] [x1002c0s1b1n1:2329757:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.211211] [x1002c0s1b1n1:2329803:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.214958] [x1002c0s1b1n1:2329793:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.216065] [x1002c0s1b1n1:2329794:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.216652] [x1002c0s1b1n1:2329800:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.216958] [x1002c0s1b1n1:2329761:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.218097] [x1002c0s1b1n1:2329753:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.218175] [x1002c0s1b1n1:2329791:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.218718] [x1002c0s1b1n1:2329764:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.220001] [x1002c0s1b1n1:2329774:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.220517] [x1002c0s1b1n1:2329770:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.221568] [x1002c0s1b1n1:2329788:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.221998] [x1002c0s1b1n1:2329798:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.222944] [x1002c0s1b1n1:2329809:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.223266] [x1002c0s1b1n1:2329813:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.223297] [x1002c0s1b1n1:2329760:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.223459] [x1002c0s1b1n1:2329799:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.224017] [x1002c0s1b1n1:2329796:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.224088] [x1002c0s1b1n1:2329769:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.224070] [x1002c0s1b1n1:2329771:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.225061] [x1002c0s1b1n1:2329756:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.225493] [x1002c0s1b1n1:2329786:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.225874] [x1002c0s1b1n1:2329766:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.229409] [x1002c0s1b1n1:2329773:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.229998] [x1002c0s1b1n1:2329784:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.230833] [x1002c0s1b1n1:2329781:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.231006] [x1002c0s1b1n1:2329777:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.231793] [x1002c0s1b1n1:2329754:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.231792] [x1002c0s1b1n1:2329759:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.231942] [x1002c0s1b1n1:2329755:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232007] [x1002c0s1b1n1:2329789:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232106] [x1002c0s1b1n1:2329778:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232098] [x1002c0s1b1n1:2329779:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232100] [x1002c0s1b1n1:2329783:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232406] [x1002c0s1b1n1:2329776:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232478] [x1002c0s1b1n1:2329767:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232478] [x1002c0s1b1n1:2329782:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232505] [x1002c0s1b1n1:2329758:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232526] [x1002c0s1b1n1:2329792:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232774] [x1002c0s1b1n1:2329802:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.232885] [x1002c0s1b1n1:2329812:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.233289] [x1002c0s1b1n1:2329808:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.314385] [x1002c0s1b1n1:2329803:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.423558] [x1002c0s1b1n1:2329764:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.425183] [x1002c0s1b1n1:2329800:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.433486] [x1002c0s1b1n1:2329761:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.433817] [x1002c0s1b1n1:2329799:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.435474] [x1002c0s1b1n1:2329776:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.436478] [x1002c0s1b1n1:2329774:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.437748] [x1002c0s1b1n1:2329794:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.440102] [x1002c0s1b1n1:2329767:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.440673] [x1002c0s1b1n1:2329793:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.443628] [x1002c0s1b1n1:2329782:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.447837] [x1002c0s1b1n1:2329813:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.452153] [x1002c0s1b1n1:2329777:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.459939] [x1002c0s1b1n1:2329809:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.460936] [x1002c0s1b1n1:2329766:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.461879] [x1002c0s1b1n1:2329756:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.465528] [x1002c0s1b1n1:2329791:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.465709] [x1002c0s1b1n1:2329771:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.465717] [x1002c0s1b1n1:2329769:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.465734] [x1002c0s1b1n1:2329778:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.466258] [x1002c0s1b1n1:2329784:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.467651] [x1002c0s1b1n1:2329773:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.467668] [x1002c0s1b1n1:2329753:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.467685] [x1002c0s1b1n1:2329758:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.467705] [x1002c0s1b1n1:2329812:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.467718] [x1002c0s1b1n1:2329808:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.467803] [x1002c0s1b1n1:2329798:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.468750] [x1002c0s1b1n1:2329754:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.468733] [x1002c0s1b1n1:2329770:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.468795] [x1002c0s1b1n1:2329802:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.469514] [x1002c0s1b1n1:2329781:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.469522] [x1002c0s1b1n1:2329760:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.469499] [x1002c0s1b1n1:2329792:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.469539] [x1002c0s1b1n1:2329759:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.469530] [x1002c0s1b1n1:2329755:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.470222] [x1002c0s1b1n1:2329796:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.470230] [x1002c0s1b1n1:2329783:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.472994] [x1002c0s1b1n1:2329788:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.473021] [x1002c0s1b1n1:2329789:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.477839] [x1002c0s1b1n1:2329779:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793865732.506481] [x1002c0s1b1n1:2329786:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c0s1b1n1:2329755] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329772] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329768] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329790] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329811] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329814] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329787] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329762] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329775] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329785] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329816] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329774] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329810] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329804] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329771] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329765] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329801] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329797] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329778] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329799] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329815] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329767] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329780] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329776] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329800] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329761] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329795] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329806] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329763] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329764] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329805] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329788] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329794] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329769] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329760] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329807] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329796] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329759] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329766] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329770] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329779] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329782] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329786] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329789] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329793] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329753] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329756] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329758] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329757] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329781] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329773] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329777] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329791] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329792] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329754] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329784] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329783] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329798] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329802] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329808] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329809] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329812] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329813] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2329803] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+Run Name: dsads_full_1n_64r_1t | Top K: 5 | Scale: 1
+[x1002c0s1b1n1:2329743] 63 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c0s1b1n1:2329743] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Dataset: 9120 rows, 5625 cols.
+
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[naive Timings]
+I/O Time:       3.30029 s
+Pre-processing: 0.0122367 s
+Covariance:     6.26485 s
+Eigendecomp:    259.057 s
+Total Time:     268.635 s
+
+
+--- Config: 32 MPI Ranks x 2 OpenMP Threads ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c0s1b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793866025.445385] [x1002c0s1b1n1:2332801:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.452532] [x1002c0s1b1n1:2332801:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.478997] [x1002c0s1b1n1:2332800:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.487958] [x1002c0s1b1n1:2332800:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.625118] [x1002c0s1b1n1:2332805:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.625117] [x1002c0s1b1n1:2332806:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.636173] [x1002c0s1b1n1:2332805:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.636166] [x1002c0s1b1n1:2332806:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.686480] [x1002c0s1b1n1:2332802:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.692130] [x1002c0s1b1n1:2332802:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.774122] [x1002c0s1b1n1:2332803:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.781873] [x1002c0s1b1n1:2332803:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.839868] [x1002c0s1b1n1:2332799:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.845538] [x1002c0s1b1n1:2332799:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.846309] [x1002c0s1b1n1:2332807:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.854794] [x1002c0s1b1n1:2332818:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.863380] [x1002c0s1b1n1:2332807:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.865624] [x1002c0s1b1n1:2332818:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.973146] [x1002c0s1b1n1:2332814:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866025.978833] [x1002c0s1b1n1:2332814:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.058736] [x1002c0s1b1n1:2332815:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.062464] [x1002c0s1b1n1:2332824:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.065753] [x1002c0s1b1n1:2332815:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.069357] [x1002c0s1b1n1:2332824:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.074779] [x1002c0s1b1n1:2332795:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.074905] [x1002c0s1b1n1:2332797:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.076029] [x1002c0s1b1n1:2332796:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.079326] [x1002c0s1b1n1:2332813:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.080521] [x1002c0s1b1n1:2332811:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.084827] [x1002c0s1b1n1:2332816:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.085735] [x1002c0s1b1n1:2332809:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.087212] [x1002c0s1b1n1:2332808:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.087631] [x1002c0s1b1n1:2332812:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.088495] [x1002c0s1b1n1:2332798:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.088526] [x1002c0s1b1n1:2332810:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.089071] [x1002c0s1b1n1:2332826:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.089727] [x1002c0s1b1n1:2332804:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.090327] [x1002c0s1b1n1:2332817:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.092168] [x1002c0s1b1n1:2332825:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.092575] [x1002c0s1b1n1:2332820:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.092639] [x1002c0s1b1n1:2332819:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.092629] [x1002c0s1b1n1:2332821:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.092619] [x1002c0s1b1n1:2332822:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.093286] [x1002c0s1b1n1:2332823:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.132295] [x1002c0s1b1n1:2332797:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.132301] [x1002c0s1b1n1:2332795:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.144362] [x1002c0s1b1n1:2332796:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.161205] [x1002c0s1b1n1:2332811:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.169044] [x1002c0s1b1n1:2332813:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.197034] [x1002c0s1b1n1:2332826:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.198784] [x1002c0s1b1n1:2332809:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.201458] [x1002c0s1b1n1:2332816:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.208579] [x1002c0s1b1n1:2332820:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.209650] [x1002c0s1b1n1:2332812:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.211700] [x1002c0s1b1n1:2332821:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.214108] [x1002c0s1b1n1:2332810:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.214150] [x1002c0s1b1n1:2332808:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.214139] [x1002c0s1b1n1:2332819:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.214173] [x1002c0s1b1n1:2332822:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.214189] [x1002c0s1b1n1:2332817:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.214244] [x1002c0s1b1n1:2332823:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.219149] [x1002c0s1b1n1:2332804:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.222648] [x1002c0s1b1n1:2332825:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866026.222682] [x1002c0s1b1n1:2332798:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c0s1b1n1:2332803] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332808] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332799] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332800] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332805] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332807] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332806] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332801] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332802] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332811] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332813] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332812] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332796] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332804] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332810] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332814] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332795] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332797] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332809] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332798] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332815] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332817] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332823] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332816] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332818] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332825] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332819] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332821] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332822] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332826] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332820] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2332824] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+Run Name: dsads_full_1n_32r_2t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c0s1b1n1:2332785] 31 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c0s1b1n1:2332785] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[naive Timings]
+I/O Time:       3.10744 s
+Pre-processing: 0.0129188 s
+Covariance:     6.07652 s
+Eigendecomp:    106.446 s
+Total Time:     115.643 s
+
+
+--- Config: 16 MPI Ranks x 4 OpenMP Threads ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c0s1b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793866144.787000] [x1002c0s1b1n1:2334121:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.792445] [x1002c0s1b1n1:2334121:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.821034] [x1002c0s1b1n1:2334123:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.828606] [x1002c0s1b1n1:2334123:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.887371] [x1002c0s1b1n1:2334119:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.887737] [x1002c0s1b1n1:2334118:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.901193] [x1002c0s1b1n1:2334122:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.903562] [x1002c0s1b1n1:2334119:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.903567] [x1002c0s1b1n1:2334118:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.904795] [x1002c0s1b1n1:2334126:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.904795] [x1002c0s1b1n1:2334127:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.904936] [x1002c0s1b1n1:2334131:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.909823] [x1002c0s1b1n1:2334120:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.914258] [x1002c0s1b1n1:2334124:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.914258] [x1002c0s1b1n1:2334125:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.916728] [x1002c0s1b1n1:2334128:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.916728] [x1002c0s1b1n1:2334129:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.919091] [x1002c0s1b1n1:2334130:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.919131] [x1002c0s1b1n1:2334132:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.919131] [x1002c0s1b1n1:2334133:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.925030] [x1002c0s1b1n1:2334122:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.950497] [x1002c0s1b1n1:2334131:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.955412] [x1002c0s1b1n1:2334126:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.957907] [x1002c0s1b1n1:2334127:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.966086] [x1002c0s1b1n1:2334120:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.967104] [x1002c0s1b1n1:2334125:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.976026] [x1002c0s1b1n1:2334132:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.976161] [x1002c0s1b1n1:2334124:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.976555] [x1002c0s1b1n1:2334128:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.977478] [x1002c0s1b1n1:2334129:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.981131] [x1002c0s1b1n1:2334130:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866144.984494] [x1002c0s1b1n1:2334133:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c0s1b1n1:2334120] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334121] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334124] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334119] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334122] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334126] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334125] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334127] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334128] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334118] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334129] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334123] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334131] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334132] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334133] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334130] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+Run Name: dsads_full_1n_16r_4t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c0s1b1n1:2334112] 15 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c0s1b1n1:2334112] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[naive Timings]
+I/O Time:       3.3071 s
+Pre-processing: 0.0123517 s
+Covariance:     5.50284 s
+Eigendecomp:    51.417 s
+Total Time:     60.2393 s
+
+
+--- Config: 8 MPI Ranks x 8 OpenMP Threads ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c0s1b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793866207.680631] [x1002c0s1b1n1:2334833:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.686111] [x1002c0s1b1n1:2334833:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.698030] [x1002c0s1b1n1:2334832:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.703382] [x1002c0s1b1n1:2334830:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.703475] [x1002c0s1b1n1:2334832:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.708173] [x1002c0s1b1n1:2334831:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.709546] [x1002c0s1b1n1:2334830:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.713148] [x1002c0s1b1n1:2334835:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.714685] [x1002c0s1b1n1:2334831:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.715864] [x1002c0s1b1n1:2334837:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.716842] [x1002c0s1b1n1:2334834:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.724110] [x1002c0s1b1n1:2334836:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.727159] [x1002c0s1b1n1:2334835:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.735676] [x1002c0s1b1n1:2334834:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.735813] [x1002c0s1b1n1:2334837:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866207.747802] [x1002c0s1b1n1:2334836:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c0s1b1n1:2334835] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334832] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334833] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334834] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334831] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334836] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334837] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2334830] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+Run Name: dsads_full_1n_8r_8t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c0s1b1n1:2334824] 7 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c0s1b1n1:2334824] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[naive Timings]
+I/O Time:       3.8811 s
+Pre-processing: 0.0116088 s
+Covariance:     4.57944 s
+Eigendecomp:    28.0259 s
+Total Time:     36.498 s
+
+
+--- Config: 4 MPI Ranks x 16 OpenMP Threads ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c0s1b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793866246.621156] [x1002c0s1b1n1:2335142:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866246.626602] [x1002c0s1b1n1:2335142:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866246.640343] [x1002c0s1b1n1:2335143:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866246.647417] [x1002c0s1b1n1:2335143:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866246.648605] [x1002c0s1b1n1:2335141:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866246.654195] [x1002c0s1b1n1:2335141:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866246.661043] [x1002c0s1b1n1:2335144:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866246.668267] [x1002c0s1b1n1:2335144:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c0s1b1n1:2335141] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2335143] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2335142] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2335144] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+Run Name: dsads_full_1n_4r_16t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c0s1b1n1:2335135] 3 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c0s1b1n1:2335135] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[naive Timings]
+I/O Time:       5.00595 s
+Pre-processing: 0.0136627 s
+Covariance:     5.41135 s
+Eigendecomp:    22.9212 s
+Total Time:     33.3522 s
+
+
+--- Config: 2 MPI Ranks x 32 OpenMP Threads ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c0s1b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793866282.116160] [x1002c0s1b1n1:2335564:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866282.117290] [x1002c0s1b1n1:2335563:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866282.125695] [x1002c0s1b1n1:2335564:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866282.126482] [x1002c0s1b1n1:2335563:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c0s1b1n1:2335564] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c0s1b1n1:2335563] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+Run Name: dsads_full_1n_2r_32t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c0s1b1n1:2335557] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c0s1b1n1:2335557] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[naive Timings]
+I/O Time:       6.95376 s
+Pre-processing: 0.0650421 s
+Covariance:     9.77459 s
+Eigendecomp:    17.2951 s
+Total Time:     34.0885 s
+
+
+--- Config: 1 MPI Ranks x 64 OpenMP Threads ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c0s1b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793866318.233078] [x1002c0s1b1n1:2335741:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793866318.239458] [x1002c0s1b1n1:2335741:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c0s1b1n1:2335741] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+Run Name: dsads_full_1n_1r_64t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[naive Timings]
+I/O Time:       11.6685 s
+Pre-processing: 0.105938 s
+Covariance:     10.4479 s
+Eigendecomp:    7.83079 s
+Total Time:     30.0531 s
+
+

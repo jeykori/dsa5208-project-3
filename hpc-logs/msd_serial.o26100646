@@ -1,0 +1,55 @@
+=== YearPredictionMSD Serial Benchmark (3 Repetitions) ===
+--- Repetition 1 of 3 ---
+Run Name: msd_serial | Top K: 5 | Scale: 1
+Dataset: 515345 rows, 90 cols.
+
+Serial PC1: Eigenvalue = 10.3536
+Serial PC2: Eigenvalue = 7.01114
+Serial PC3: Eigenvalue = 5.31673
+Serial PC4: Eigenvalue = 3.7795
+Serial PC5: Eigenvalue = 3.37497
+
+[serial Timings]
+I/O Time:       17.3491 s
+Pre-processing: 0.594091 s
+Covariance:     18.1685 s
+Eigendecomp:    0.06428 s
+Total Time:     36.176 s
+
+
+--- Repetition 2 of 3 ---
+Run Name: msd_serial | Top K: 5 | Scale: 1
+Dataset: 515345 rows, 90 cols.
+
+Serial PC1: Eigenvalue = 10.3536
+Serial PC2: Eigenvalue = 7.01114
+Serial PC3: Eigenvalue = 5.31673
+Serial PC4: Eigenvalue = 3.7795
+Serial PC5: Eigenvalue = 3.37497
+
+[serial Timings]
+I/O Time:       16.0211 s
+Pre-processing: 0.701399 s
+Covariance:     22.4343 s
+Eigendecomp:    0.0628703 s
+Total Time:     39.2197 s
+
+
+--- Repetition 3 of 3 ---
+Run Name: msd_serial | Top K: 5 | Scale: 1
+Dataset: 515345 rows, 90 cols.
+
+Serial PC1: Eigenvalue = 10.3536
+Serial PC2: Eigenvalue = 7.01114
+Serial PC3: Eigenvalue = 5.31673
+Serial PC4: Eigenvalue = 3.7795
+Serial PC5: Eigenvalue = 3.37497
+
+[serial Timings]
+I/O Time:       12.4894 s
+Pre-processing: 0.735219 s
+Covariance:     29.8591 s
+Eigendecomp:    0.0566452 s
+Total Time:     43.1403 s
+
+

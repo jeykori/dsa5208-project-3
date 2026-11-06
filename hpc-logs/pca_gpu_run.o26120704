@@ -1,0 +1,367 @@
+=== GPU Diagnostic (nvidia-smi) ===
+Thu Nov  5 17:12:46 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.124.06             Driver Version: 570.124.06     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   42C    P0             55W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+=== Executing OpenMP GPU Target Offload on DSADS (5,625 Features) ===
+--- Repetition 1 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793869969.684953] [x1000c2s3b0n1:586042:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869969.690798] [x1000c2s3b0n1:586042:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:586042] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: dsads_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+[x1000c2s3b0n1:586035] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:586035] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Dataset: 9120 rows, 5625 cols.
+
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       11.4748 s
+Pre-processing: 0.255904 s
+Covariance:     41.0345 s
+Eigendecomp:    204.613 s
+Total Time:     257.378 s
+
+
+--- Repetition 2 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793870246.324566] [x1000c2s3b0n1:587177:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793870246.330375] [x1000c2s3b0n1:587177:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:587177] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: dsads_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1000c2s3b0n1:587171] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:587171] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       11.4208 s
+Pre-processing: 0.12525 s
+Covariance:     41.1393 s
+Eigendecomp:    204.557 s
+Total Time:     257.242 s
+
+
+--- Repetition 3 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793870505.904792] [x1000c2s3b0n1:588256:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793870505.910759] [x1000c2s3b0n1:588256:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:588256] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: dsads_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1000c2s3b0n1:588250] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:588250] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       11.3329 s
+Pre-processing: 0.125734 s
+Covariance:     40.9983 s
+Eigendecomp:    204.517 s
+Total Time:     256.974 s
+
+
+--- Repetition 4 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793870765.240140] [x1000c2s3b0n1:589508:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793870765.245961] [x1000c2s3b0n1:589508:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:589508] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: dsads_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1000c2s3b0n1:589502] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:589502] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       11.3842 s
+Pre-processing: 0.125835 s
+Covariance:     41.0072 s
+Eigendecomp:    204.581 s
+Total Time:     257.099 s
+
+
+--- Repetition 5 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793871024.706417] [x1000c2s3b0n1:590660:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793871024.712296] [x1000c2s3b0n1:590660:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:590660] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: dsads_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1000c2s3b0n1:590654] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:590654] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       11.4683 s
+Pre-processing: 0.125556 s
+Covariance:     40.955 s
+Eigendecomp:    204.537 s
+Total Time:     257.086 s
+
+
+
+=== Executing OpenMP GPU Target Offload on YearPredictionMSD (515,345 Samples) ===
+--- Repetition 1 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793871284.116013] [x1000c2s3b0n1:591744:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793871284.121738] [x1000c2s3b0n1:591744:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:591744] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: msd_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+[x1000c2s3b0n1:591738] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:591738] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Dataset: 515345 rows, 90 cols.
+
+Parallel PC1: Eigenvalue = 10.3536
+Parallel PC2: Eigenvalue = 7.01114
+Parallel PC3: Eigenvalue = 5.31673
+Parallel PC4: Eigenvalue = 3.7795
+Parallel PC5: Eigenvalue = 3.37497
+
+[optimized Timings]
+I/O Time:       11.6404 s
+Pre-processing: 0.114874 s
+Covariance:     9.45439 s
+Eigendecomp:    0.0350228 s
+Total Time:     21.2447 s
+
+
+--- Repetition 2 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793871323.929699] [x1000c2s3b0n1:591994:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793871323.935559] [x1000c2s3b0n1:591994:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:591994] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: msd_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+Dataset: 515345 rows, 90 cols.
+
+[x1000c2s3b0n1:591988] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:591988] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 10.3536
+Parallel PC2: Eigenvalue = 7.01114
+Parallel PC3: Eigenvalue = 5.31673
+Parallel PC4: Eigenvalue = 3.7795
+Parallel PC5: Eigenvalue = 3.37497
+
+[optimized Timings]
+I/O Time:       11.6003 s
+Pre-processing: 0.114787 s
+Covariance:     9.42192 s
+Eigendecomp:    0.0347634 s
+Total Time:     21.1718 s
+
+
+--- Repetition 3 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793871347.380773] [x1000c2s3b0n1:592031:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793871347.386599] [x1000c2s3b0n1:592031:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:592031] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: msd_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+Dataset: 515345 rows, 90 cols.
+
+[x1000c2s3b0n1:592025] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:592025] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 10.3536
+Parallel PC2: Eigenvalue = 7.01114
+Parallel PC3: Eigenvalue = 5.31673
+Parallel PC4: Eigenvalue = 3.7795
+Parallel PC5: Eigenvalue = 3.37497
+
+[optimized Timings]
+I/O Time:       11.6512 s
+Pre-processing: 0.114977 s
+Covariance:     9.42832 s
+Eigendecomp:    0.0347935 s
+Total Time:     21.2293 s
+
+
+--- Repetition 4 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793871370.915514] [x1000c2s3b0n1:592166:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793871370.921367] [x1000c2s3b0n1:592166:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:592166] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: msd_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+Dataset: 515345 rows, 90 cols.
+
+[x1000c2s3b0n1:592160] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:592160] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 10.3536
+Parallel PC2: Eigenvalue = 7.01114
+Parallel PC3: Eigenvalue = 5.31673
+Parallel PC4: Eigenvalue = 3.7795
+Parallel PC5: Eigenvalue = 3.37497
+
+[optimized Timings]
+I/O Time:       11.7325 s
+Pre-processing: 0.114823 s
+Covariance:     9.45181 s
+Eigendecomp:    0.0347561 s
+Total Time:     21.3339 s
+
+
+--- Repetition 5 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1000c2s3b0n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793871394.590314] [x1000c2s3b0n1:592364:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793871394.596196] [x1000c2s3b0n1:592364:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1000c2s3b0n1:592364] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: 1 GPU device(s) detected.
+Run Name: msd_gpu_1n_1r_1t | Top K: 5 | Scale: 1
+Dataset: 515345 rows, 90 cols.
+
+[x1000c2s3b0n1:592358] 1 more process has sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1000c2s3b0n1:592358] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 10.3536
+Parallel PC2: Eigenvalue = 7.01114
+Parallel PC3: Eigenvalue = 5.31673
+Parallel PC4: Eigenvalue = 3.7795
+Parallel PC5: Eigenvalue = 3.37497
+
+[optimized Timings]
+I/O Time:       11.6296 s
+Pre-processing: 0.114984 s
+Covariance:     9.41151 s
+Eigendecomp:    0.0347197 s
+Total Time:     21.1908 s
+
+
+
+=== GPU Offload Test Run Complete ===

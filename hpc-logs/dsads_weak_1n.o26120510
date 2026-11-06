@@ -1,0 +1,161 @@
+=== DSADS Weak Scaling: 1 Node (1 Rank x 64 Threads) + 1k Dataset ===
+--- Repetition 1 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c3s3b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793868226.741788] [x1002c3s3b1n1:2647964:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793868226.746849] [x1002c3s3b1n1:2647964:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c3s3b1n1:2647964] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_weak_1node | Top K: 5 | Scale: 1
+Dataset: 1000 rows, 5625 cols.
+
+Parallel PC1: Eigenvalue = 1429.2
+Parallel PC2: Eigenvalue = 781.363
+Parallel PC3: Eigenvalue = 480.034
+Parallel PC4: Eigenvalue = 306.701
+Parallel PC5: Eigenvalue = 230.897
+
+[optimized Timings]
+I/O Time:       1.07053 s
+Pre-processing: 0.0220162 s
+Covariance:     0.741214 s
+Eigendecomp:    3.70029 s
+Total Time:     5.53405 s
+
+
+--- Repetition 2 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c3s3b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793868241.772243] [x1002c3s3b1n1:2648082:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793868241.777251] [x1002c3s3b1n1:2648082:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c3s3b1n1:2648082] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_weak_1node | Top K: 5 | Scale: 1
+Dataset: 1000 rows, 5625 cols.
+
+Parallel PC1: Eigenvalue = 1429.2
+Parallel PC2: Eigenvalue = 781.363
+Parallel PC3: Eigenvalue = 480.034
+Parallel PC4: Eigenvalue = 306.701
+Parallel PC5: Eigenvalue = 230.897
+
+[optimized Timings]
+I/O Time:       1.0742 s
+Pre-processing: 0.0379449 s
+Covariance:     0.550139 s
+Eigendecomp:    4.37533 s
+Total Time:     6.03761 s
+
+
+--- Repetition 3 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c3s3b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793868249.528297] [x1002c3s3b1n1:2648179:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793868249.533125] [x1002c3s3b1n1:2648179:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c3s3b1n1:2648179] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_weak_1node | Top K: 5 | Scale: 1
+Dataset: 1000 rows, 5625 cols.
+
+Parallel PC1: Eigenvalue = 1429.2
+Parallel PC2: Eigenvalue = 781.363
+Parallel PC3: Eigenvalue = 480.034
+Parallel PC4: Eigenvalue = 306.701
+Parallel PC5: Eigenvalue = 230.897
+
+[optimized Timings]
+I/O Time:       1.13097 s
+Pre-processing: 0.037294 s
+Covariance:     0.53996 s
+Eigendecomp:    4.15116 s
+Total Time:     5.85939 s
+
+
+--- Repetition 4 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c3s3b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793868257.108144] [x1002c3s3b1n1:2648279:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793868257.113179] [x1002c3s3b1n1:2648279:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c3s3b1n1:2648279] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_weak_1node | Top K: 5 | Scale: 1
+Dataset: 1000 rows, 5625 cols.
+
+Parallel PC1: Eigenvalue = 1429.2
+Parallel PC2: Eigenvalue = 781.363
+Parallel PC3: Eigenvalue = 480.034
+Parallel PC4: Eigenvalue = 306.701
+Parallel PC5: Eigenvalue = 230.897
+
+[optimized Timings]
+I/O Time:       1.06101 s
+Pre-processing: 0.0281649 s
+Covariance:     0.507403 s
+Eigendecomp:    3.86958 s
+Total Time:     5.46616 s
+
+
+--- Repetition 5 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c3s3b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793868264.323684] [x1002c3s3b1n1:2648530:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793868264.328700] [x1002c3s3b1n1:2648530:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c3s3b1n1:2648530] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_weak_1node | Top K: 5 | Scale: 1
+Dataset: 1000 rows, 5625 cols.
+
+Parallel PC1: Eigenvalue = 1429.2
+Parallel PC2: Eigenvalue = 781.363
+Parallel PC3: Eigenvalue = 480.034
+Parallel PC4: Eigenvalue = 306.701
+Parallel PC5: Eigenvalue = 230.897
+
+[optimized Timings]
+I/O Time:       1.06594 s
+Pre-processing: 0.0344633 s
+Covariance:     0.489279 s
+Eigendecomp:    4.29197 s
+Total Time:     5.88165 s
+
+

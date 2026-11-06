@@ -1,0 +1,216 @@
+=== DSADS Strong Scaling: 4 Nodes (4 Ranks x 64 Threads) ===
+--- Repetition 1 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c1s2b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793869124.809267] [x1002c1s2b1n1:2879545:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869124.814270] [x1002c1s2b1n1:2879545:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869124.823487] [x1002c5s0b1n1:1660581:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869124.828627] [x1002c5s0b1n1:1660581:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869124.863871] [x1002c5s0b0n0:4070182:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869124.869101] [x1002c5s0b0n0:4070182:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869124.883533] [x1002c4s7b1n1:2954954:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869124.892301] [x1002c4s7b1n1:2954954:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c5s0b1n1:1660581] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c1s2b1n1:2879545] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c5s0b0n0:4070182] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c4s7b1n1:2954954] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_strong_4node | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c5s0b1n1:1660557] 3 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c5s0b1n1:1660557] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       4.06055 s
+Pre-processing: 0.03153 s
+Covariance:     3.26613 s
+Eigendecomp:    3.64979 s
+Total Time:     11.008 s
+
+
+--- Repetition 2 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c5s0b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793869139.781934] [x1002c5s0b1n1:1660682:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869139.783435] [x1002c1s2b1n1:2879811:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869139.787024] [x1002c5s0b1n1:1660682:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869139.788287] [x1002c1s2b1n1:2879811:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869139.799714] [x1002c4s7b1n1:2955334:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869139.804307] [x1002c5s0b0n0:4070428:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869139.807884] [x1002c4s7b1n1:2955334:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869139.809291] [x1002c5s0b0n0:4070428:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c5s0b1n1:1660682] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c1s2b1n1:2879811] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c4s7b1n1:2955334] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c5s0b0n0:4070428] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_strong_4node | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c5s0b1n1:1660674] 3 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c5s0b1n1:1660674] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       4.03359 s
+Pre-processing: 0.0422835 s
+Covariance:     3.8819 s
+Eigendecomp:    3.65362 s
+Total Time:     11.6114 s
+
+
+--- Repetition 3 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c1s2b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793869155.275520] [x1002c1s2b1n1:2880081:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869155.277685] [x1002c5s0b1n1:1660800:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869155.280304] [x1002c1s2b1n1:2880081:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869155.282674] [x1002c5s0b1n1:1660800:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869155.325218] [x1002c4s7b1n1:2955591:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869155.330818] [x1002c4s7b1n1:2955591:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869155.339491] [x1002c5s0b0n0:4070692:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869155.344697] [x1002c5s0b0n0:4070692:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c5s0b1n1:1660800] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c1s2b1n1:2880081] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c5s0b0n0:4070692] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c4s7b1n1:2955591] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_strong_4node | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c5s0b1n1:1660793] 3 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c5s0b1n1:1660793] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       4.01553 s
+Pre-processing: 0.041185 s
+Covariance:     5.55361 s
+Eigendecomp:    3.63464 s
+Total Time:     13.245 s
+
+
+--- Repetition 4 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c1s2b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793869172.604432] [x1002c1s2b1n1:2880341:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869172.609565] [x1002c1s2b1n1:2880341:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869172.631404] [x1002c4s7b1n1:2955801:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869172.637089] [x1002c4s7b1n1:2955801:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869172.647034] [x1002c5s0b1n1:1661058:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869172.651891] [x1002c5s0b1n1:1661058:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869172.681144] [x1002c5s0b0n0:4071045:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869172.686097] [x1002c5s0b0n0:4071045:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c5s0b1n1:1661058] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c1s2b1n1:2880341] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c4s7b1n1:2955801] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c5s0b0n0:4071045] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_strong_4node | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c5s0b1n1:1661040] 3 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c5s0b1n1:1661040] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       4.26404 s
+Pre-processing: 0.0333895 s
+Covariance:     5.69375 s
+Eigendecomp:    3.65888 s
+Total Time:     13.6501 s
+
+
+--- Repetition 5 of 5 ---
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           x1002c1s2b1n1
+  Local device:         mlx5_0
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[1793869190.146239] [x1002c1s2b1n1:2880721:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869190.151375] [x1002c1s2b1n1:2880721:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869190.181371] [x1002c4s7b1n1:2956028:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869190.186955] [x1002c4s7b1n1:2956028:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869190.189528] [x1002c5s0b1n1:1661196:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869190.194646] [x1002c5s0b1n1:1661196:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869190.226016] [x1002c5s0b0n0:4071264:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[1793869190.231217] [x1002c5s0b0n0:4071264:0]     gdr_copy_md.c:272  UCX  WARN  could not open gdr copy, built for v2.3 but loaded v2.5
+[x1002c5s0b1n1:1661196] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c5s0b0n0:4071264] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c1s2b1n1:2880721] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[x1002c4s7b1n1:2956028] common_ucx.c:364  Warning: UCX is unable to handle VM_UNMAP event. This may cause performance degradation or data corruption. Pls try adding --mca opal_common_ucx_opal_mem_hooks 1 to mpirun/oshrun command line to resolve this issue.
+[INFO] OpenMP Target Offload: No GPU detected; executing on CPU host threads.
+Run Name: dsads_strong_4node | Top K: 5 | Scale: 1
+Dataset: 9120 rows, 5625 cols.
+
+[x1002c5s0b1n1:1661187] 3 more processes have sent help message help-mpi-btl-openib-cpc-base.txt / no cpcs for port
+[x1002c5s0b1n1:1661187] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Parallel PC1: Eigenvalue = 671.042
+Parallel PC2: Eigenvalue = 584.283
+Parallel PC3: Eigenvalue = 384.055
+Parallel PC4: Eigenvalue = 204.571
+Parallel PC5: Eigenvalue = 163.154
+
+[optimized Timings]
+I/O Time:       4.28219 s
+Pre-processing: 0.0277186 s
+Covariance:     5.55493 s
+Eigendecomp:    3.63407 s
+Total Time:     13.4989 s
+
+

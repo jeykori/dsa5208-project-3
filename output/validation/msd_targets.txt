@@ -1,0 +1,18 @@
+--- Scikit-Learn Validation Targets (MSD) ---
+Scaling applied: Z-Score Standardization (with std)
+
+Top 5 Eigenvalues (Variance):
+PC1: 10.353596
+PC2: 7.011155
+PC3: 5.316737
+PC4: 3.779512
+PC5: 3.374975
+
+Top 5 Explained Variance Ratios:
+PC1: 11.503973%
+PC2: 7.790158%
+PC3: 5.907474%
+PC4: 4.199450%
+PC5: 3.749965%
+
+Total Variance Explained by Top 5: 33.151020%
